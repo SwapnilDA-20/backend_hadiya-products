@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: backend
-        image: swapnil2026/hadiya:16 
+        image: swapnil2026/hbackend:16 
         ports:
         - containerPort: 3000
         env:
