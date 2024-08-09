@@ -1,26 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: 16
+  name: backend
   labels:
-<<<<<<< HEAD:k8s/deployment.yml
     app: backend
   namespace: product
-=======
-    app: 16
->>>>>>> 4aa42825b4ebe9c4339ed87b73f978019c08d40d:deployment.yml
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: 16
+      app: backend
   template:
     metadata:
       labels:
-        app: 16
+        app: backend
     spec:
       containers:
-      - name: 16
+      - name: backend
         image: swapnil2026/hadiya:16 
         ports:
         - containerPort: 3000
@@ -50,16 +46,12 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-<<<<<<< HEAD:k8s/deployment.yml
   name: backend-service
   namespace: product
-=======
-  name: 16-service
->>>>>>> 4aa42825b4ebe9c4339ed87b73f978019c08d40d:deployment.yml
 spec:
   type: ClusterIP
   selector:
-    app: 16
+    app: backend
   ports:
   - port: 3000
     targetPort: 3000
