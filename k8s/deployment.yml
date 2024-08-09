@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: frontendi
+  name: 1i
   namespace: product
   labels:
-    app: frontend
+    app: 1
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: frontend
+      app: 1
   template:
     metadata:
       labels:
-        app: frontend
+        app: 1
     spec:
       containers:
-      - name: frontend
+      - name: 1
         image: swapnil2026/hadiya:fe-latest
         ports:
         - containerPort: 80
@@ -24,12 +24,12 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: frontend-service
+  name: 1-service
   namespace: product
 spec:
   type: ClusterIP
   selector:
-    app: frontend
+    app: 1
   ports:
   - port: 80
     targetPort: 80

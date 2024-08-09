@@ -1,0 +1,6 @@
+projectKey=HPFrontend
+serverUrl=https://sonarqube.swapnilahirekar.in
+serverVersion=10.6.0.92116
+dashboardUrl=https://sonarqube.swapnilahirekar.in/dashboard?id=HPFrontend
+ceTaskId=7a77f09b-daca-4b44-980a-ee94ac461bfa
+ceTaskUrl=https://sonarqube.swapnilahirekar.in/api/ce/task?id=7a77f09b-daca-4b44-980a-ee94ac461bfa
