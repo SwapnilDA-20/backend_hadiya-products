@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: backend
+  name: 16
   labels:
-    app: backend
+    app: 16
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: backend
+      app: 16
   template:
     metadata:
       labels:
-        app: backend
+        app: 16
     spec:
       containers:
-      - name: backend
-        image: swapnil2026/hadiya:backend 
+      - name: 16
+        image: swapnil2026/hadiya:16 
         ports:
         - containerPort: 3000
         env:
@@ -45,11 +45,11 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: backend-service
+  name: 16-service
 spec:
   type: ClusterIP
   selector:
-    app: backend
+    app: 16
   ports:
   - port: 3000
     targetPort: 3000
