@@ -2,5 +2,5 @@ projectKey=HPBackend
 serverUrl=https://sonarqube.swapnilahirekar.in
 serverVersion=10.6.0.92116
 dashboardUrl=https://sonarqube.swapnilahirekar.in/dashboard?id=HPBackend
-ceTaskId=d2c16cb0-5ba5-4d33-aa3a-e8d4ab9425bb
-ceTaskUrl=https://sonarqube.swapnilahirekar.in/api/ce/task?id=d2c16cb0-5ba5-4d33-aa3a-e8d4ab9425bb
+ceTaskId=4a7e872c-a0da-44a7-ab3b-52098dab2f57
+ceTaskUrl=https://sonarqube.swapnilahirekar.in/api/ce/task?id=4a7e872c-a0da-44a7-ab3b-52098dab2f57
